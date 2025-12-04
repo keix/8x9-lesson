@@ -34,8 +34,8 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def run():
-    print("Server running at http://localhost:8080")
-    server = ThreadingHTTPServer(("0.0.0.0", 8080), Handler)
+    print("Server running at http://localhost:18080")
+    server = ThreadingHTTPServer(("0.0.0.0", 18080), Handler)
     server.serve_forever()
 
 if __name__ == "__main__":
