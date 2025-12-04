@@ -9,10 +9,10 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", str(len(data)))
-        self.send_header("Connection", "close")   # ← 決定打
+        self.send_header("Connection", "close")
         self.end_headers()
         self.wfile.write(data)
-        self.close_connection = True              # ← 完全に詰まり対策
+        self.close_connection = True
 
     def do_GET(self):
         if self.path == "/tweets":
