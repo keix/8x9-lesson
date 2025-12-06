@@ -3,6 +3,7 @@ import json
 
 TWEETS = []
 
+
 class Handler(BaseHTTPRequestHandler):
     def _send_json(self, obj, status=200):
         data = json.dumps(obj).encode()
@@ -38,7 +39,6 @@ def run():
     server = ThreadingHTTPServer(("127.0.0.1", 18080), Handler)
     server.serve_forever()
 
+
 if __name__ == "__main__":
     run()
-
-
