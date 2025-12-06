@@ -2,8 +2,9 @@ from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 import json
 
 TWEETS = []
-USERS = {"admin": "password"} # ID / Password は好きなのに変えてください
+USERS = {"admin": "password"}  # ID / Password は好きなのに変えてください
 SESSIONS = {}
+
 
 class Handler(BaseHTTPRequestHandler):
     def _send_json(self, obj, status=200):
@@ -52,7 +53,7 @@ class Handler(BaseHTTPRequestHandler):
             tweet = {"id": len(TWEETS) + 1, "user": user, "text": data["text"]}
             TWEETS.append(tweet)
             return self._send_json(tweet, 201)
-        
+
         return self._send_json({"error": "not found"}, 404)
 
 
@@ -61,6 +62,6 @@ def run():
     server = ThreadingHTTPServer(("127.0.0.1", 18080), Handler)
     server.serve_forever()
 
+
 if __name__ == "__main__":
     run()
-
