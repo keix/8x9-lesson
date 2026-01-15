@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "username": "madoka",
+    "email": "madoka@example.com",
+    "password": "madoka123",
+    "is_active": true,
+    "last_login": "2026-01-15T06:13:16.574008Z"
+  },
+  {
+    "id": 2,
+    "username": "homura",
+    "email": "homura@example.com",
+    "password": "homura123",
+    "is_active": true,
+    "last_login": "2024-06-10T08:00:00Z"
+  },
+  {
+    "id": 3,
+    "username": "sayaka",
+    "email": "sayaka@example.com",
+    "password": "sayaka123",
+    "is_active": true,
+    "last_login": null
+  },
+  {
+    "id": 4,
+    "username": "mami",
+    "email": "mami@example.com",
+    "password": "mami123",
+    "is_active": false,
+    "last_login": "2024-04-01T09:00:00Z"
+  },
+  {
+    "id": 5,
+    "username": "kyoko",
+    "email": "kyoko@example.com",
+    "password": "kyoko123",
+    "is_active": true,
+    "last_login": "2024-06-01T18:45:00Z"
+  }
+]
