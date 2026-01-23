@@ -18,10 +18,8 @@ First, login to get a token:
 ```bash
 curl -X POST http://localhost:18080/login \
   -H "Content-Type: application/json" \
-  -d '{"username": "user1", "password": "pass1"}'
+  -d '{"username": "admin", "password": "password"}'
 ```
-
-Default users: `user1/pass1` and `admin/123`
 
 ## Posting
 Post tweets using the token:
