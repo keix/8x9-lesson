@@ -22,7 +22,7 @@ python post.py
 ## Browser Access
 Open your browser and go to:
 ```
-http://localhost:18080
+http://localhost:18080/tweets
 ```
 
 With just this setup, you can see the structure of a simple Twitter-like application.
