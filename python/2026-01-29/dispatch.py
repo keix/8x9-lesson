@@ -22,8 +22,7 @@ def dispatch(request):
         return users.deactivate_user(request["email"])
 
     elif command == "list":
-        users.list_users()
-        return "ok"
+        return users.list_users()
 
     elif command == "change-email":
         return users.change_email(request["email"], request["new_email"])
