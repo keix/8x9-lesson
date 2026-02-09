@@ -1,0 +1,31 @@
+- id
+- username
+- email
+- password
+- is_active
+- last_login
+- created_at
+- updated_at
+- profile:
+    - first_name
+    - last_name
+    - date_of_birth
+    - bio
+    - avatar_url
+- roles:
+    - role_name
+    - permissions:
+        - permission_name
+        - description
+- settings:
+    - theme
+    - notifications:
+        - email_notifications
+        - sms_notifications
+        - push_notifications
+    - privacy:
+        - profile_visibility
+        - search_engine_indexing
+
+
+
